@@ -6,17 +6,16 @@ using namespace std;
 
 template<typename T>
 class User{
-	private:
-		int len;
-		T data;
-	public:	
+private:
+	int len;
+	T data;
+public:	
 	User() { len = 0; }
 	~User();
 	bool sorted(T a[], int n);
 	void merge(T a[], T x[], int start, int mid, int end);
 	void msort(T a[], T x[], int start, int end);
-	void mergesort(T a[], int len);
-};
+	void mergesort(T a[], int len);};
 template<class T>
 bool User<T>::sorted(T a[], int n) {//checks if array is sorted
 
